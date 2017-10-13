@@ -1,7 +1,9 @@
 // Styling for the footer
 footer {
-  padding: 25px 0;
+  padding: 80px 0;
   text-align: center;
+  background-image: url('../img/footer_bg.jpg');
+  background-size: cover;
   span.copyright {
     font-size: 90%;
     line-height: 40px;
@@ -19,7 +21,10 @@ footer {
 
 ul.social-buttons {
   margin-bottom: 0;
+  text-align: left;
+  padding: .75rem 0.8rem;
   li {
+    text-align: center;
     a {
       font-size: 20px;
       line-height: 40px;
@@ -32,7 +37,6 @@ ul.social-buttons {
       color: white;
       border-radius: 100%;
       outline: none;
-      background-color: $gray-darker;
       &:active,
       &:focus,
       &:hover {
@@ -40,4 +44,12 @@ ul.social-buttons {
       }
     }
   }
+}
+.footer-bottom{
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top:1px solid rgba(255, 255, 255, 0.10)
+}
+.footer-bottom h3{
+  padding-top: 10px;
 }

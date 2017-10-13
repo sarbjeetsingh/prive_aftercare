@@ -8,6 +8,12 @@
   @include button-variant(white, $theme-primary, $theme-primary);
   @include heading-font;
 }
+.btn-default{
+  @include button-variant($theme-primary,white , #CCCCCC);
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
 
 .btn-xl {
   font-size: 18px;
@@ -89,4 +95,64 @@
 .ml-20{
   margin-left: 20px;
 }
-
+.list-group.link-list{
+  .list-group-item{
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color:transparent;
+    border: none;
+    text-align: left;
+      a{
+        color: $gray-lighter;
+        font-size: 14px;
+        @include antialiased;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2.4px;
+    @include antialiased;
+  }
+}
+.list-group.footer-bottom-list{
+  .list-group-item{
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color:transparent;
+    border: none;
+    text-align: left;
+      a{
+        color: white;
+        font-size: 14px;
+        @include antialiased;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2.4px;
+    @include antialiased;
+  }
+}
+.input-group-addon{
+  background: #f6f6f6;
+  border-radius:0;
+}
+.input-group-addon i{
+  color:#9FA3A7;
+}
