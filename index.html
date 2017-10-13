@@ -449,86 +449,146 @@
 
     <!-- Contact -->
     <section id="contact">
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8575212673186!2d-118.37674024933561!3d34.07316648050493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b94b9ae1ddab%3A0x6ed9422cf69718af!2s8438+W+3rd+St%2C+Los+Angeles%2C+CA+90048!5e0!3m2!1sen!2s!4v1507871371586" width="100%" height="348" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="row contact-form-row">
+          <div class="col-md-6">
+            <h2 class="section-heading">Get in touch</h2>
+            <label class="address">Phone</label>
+            <p>310-555-1234</p>
+            <label class="address">Address</label>
+            <p>8438 West 3rd Street, Los Angeles, CA</p>
+            <label class="address">Email</label>
+            <p>contact@privecare.com</p>
+            <button class="btn btn-default">Chat</button>
           </div>
+          <div class="col-md-6">
+              <form id="contactForm" name="sentMessage" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                        <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                      </div>
+                      
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                        <input class="form-control" id="email" type="email" placeholder="Email" required data-validation-required-message="Please enter your email address.">
+                      </div>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Your Message" required data-validation-required-message="Please enter a message."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-12 text-right">
+                    <div id="success"></div>
+                    <button id="sendMessageButton" type="submit" class="btn btn-default">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+        <div class="row footer-top">
+          <div class="col-md-3">
+            <ul class="list-group link-list">
+              <li class="list-group-item active">Product</li>
+              <li class="list-group-item"><a href="#">Popular</a></li>
+              <li class="list-group-item"><a href="#">Trending</a></li>
+              <li class="list-group-item"><a href="#">Catelog</a></li>
+              <li class="list-group-item"><a href="#">Features</a></li>
+            </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
+            <ul class="list-group link-list">
+              <li class="list-group-item active">Company</li>
+              <li class="list-group-item"><a href="#">Press Releases</a></li>
+              <li class="list-group-item"><a href="#">Mission</a></li>
+              <li class="list-group-item"><a href="#">Strategy</a></li>
+              <li class="list-group-item"><a href="#">Works</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-group link-list">
+              <li class="list-group-item active">Learn More</li>
+              <li class="list-group-item"><a href="#">Support</a></li>
+              <li class="list-group-item"><a href="#">Developers</a></li>
+              <li class="list-group-item"><a href="#">Customer Service</a></li>
+              <li class="list-group-item"><a href="#">Get Started Guide</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+              <ul class="list-group link-list">
+              <li class="list-group-item active">Follow</li>
+               
+            </ul>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+              <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
+                  <a href="#">
+                    <i class="fa fa-pinterest-p"></i>
+                  </a>
+                </li>
             </ul>
           </div>
         </div>
+        <div class="row footer-bottom">
+            <div class="col-md-3">
+              <h3>PRIVE AFTERCARE</h3>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group footer-bottom-list">
+                <li class="list-group-item"><a href="#">PRIVATE POLICY</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group footer-bottom-list">
+               
+                <li class="list-group-item"><a href="#">TERMS & CONDITIONS</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-group footer-bottom-list">
+                <li class="list-group-item"><a href="#"> COPYRIGHT NOTIFICATIONS</a> </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </footer>
 
