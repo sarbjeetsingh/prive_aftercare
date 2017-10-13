@@ -19,9 +19,10 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
   </head>
 
@@ -30,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -44,13 +45,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#rooms">Rooms</a>
+              <a class="nav-link js-scroll-trigger" href="#room_type">Rooms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">testimonials & partners</a>
+              <a class="nav-link js-scroll-trigger" href="#testimonial">testimonials & partners</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#gallery">gallery</a>
@@ -64,7 +65,7 @@
             <li class="nav-item">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Prive Aftercare</a>
             </li>
-            
+
           </ul>
       </div>
     </nav>
@@ -77,371 +78,493 @@
           <div class="hr-divider"></div>
           <div class="intro-heading">Healing Reimagined</div>
           <div class="intro-lead-in">Luxury aftercare for those who want to heal in comfort.</div>
-          
-          
+
+
         </div>
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+    <!-- live chat -->
+    <section id="live_chat">
+      <div class="live-chat-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <span class="live-chat-ques">Have questions? Lets talk!</span>
+              <button id="sendMessageButton" class="btn btn-white ml-20" type="submit">Live Chat</button>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>Lines</h4>
-                <p class="text-muted">Branding</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>Southwest</h4>
-                <p class="text-muted">Website Design</p>
-              </div>
-            </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
     <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      <div class="about_box">
+        <div class="about_wrap">
+          <h4>ABOUT</h4>
+          <div class="text-left">Privé Luxury Recovery/Retreat provides serene rest and recovery to clients within the Hollywood and Los Angeles Area.</div>
+        </div>
+        <div class="mission_wrap">
+          <h4>OUR MISSION</h4>
+          <div class="text-left">We are here to provide a worry free spa like medical retreat for our clients to recover and rejuvenate in a five star hotel environment.</div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="service_box">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">SERVICES</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>Compounding</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Threads</h4>
+                <p class="text-muted">Illustration</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>Personal Concierge Service</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Explore</h4>
+                <p class="text-muted">Graphic Design</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>24hr Nurse</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Finish</h4>
+                <p class="text-muted">Identity</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>24hr Nurse</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Lines</h4>
+                <p class="text-muted">Branding</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>Personal Pharmacist</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Southwest</h4>
+                <p class="text-muted">Website Design</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <div class="outer">
+                      <h4>Room Service from Goldie's restaurant</h4>
+                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/services/service-1.png" alt="">
+              </a>
+              <!-- <div class="portfolio-caption">
+                <h4>Window</h4>
+                <p class="text-muted">Photography</p>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <div class="outer">
+                        <h4>24hr Nurse</h4>
+                        <div class="inner">Type something long that will go here and will take this much room.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="img/services/service-1.png" alt="">
+                </a>
+                <!-- <div class="portfolio-caption">
+                  <h4>Lines</h4>
+                  <p class="text-muted">Branding</p>
+                </div> -->
+              </div>
+              <div class="col-md-3 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <div class="outer">
+                        <h4>Billing Handled</h4>
+                        <div class="inner">Type something long that will go here and will take this much room.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="img/services/service-1.png" alt="">
+                </a>
+                <!-- <div class="portfolio-caption">
+                  <h4>Southwest</h4>
+                  <p class="text-muted">Website Design</p>
+                </div> -->
+              </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
+      </div>
+    </section>
+
+    <!-- room type -->
+    <section id="room_type">
+      <div class="room_type_box">
+        <div class="outer_box">
+          <div id="roomTypeCarousal" class="carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#roomTypeCarousal" data-slide-to="0" class="active"></li>
+              <li data-target="#roomTypeCarousal" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="inner_box">
+                  <h4 class="text-capitalize">Large Room</h4>
+                  <div class="price">$1,500</div>
+                  <div class="duration">per night</div>
+                  <div class="desc text-center">We are just a button away to answer any of your questions and get you set up for your next procedure.</div>
+                  <div class="facilities">
+                    <ul class="list-inline room-types">
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/double-bed.png">
+                          <div class="facility">Double Bed</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/Wifi.png">
+                          <div class="facility">Wifi</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/apple-tv.png">
+                          <div class="facility">Apple Tv</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/private-line.png">
+                          <div class="facility">Private Line</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="#services">Learn More</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="#services">Request Booking</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="inner_box">
+                  <h4 class="text-capitalize">Small Room</h4>
+                  <div class="price">$1,500</div>
+                  <div class="duration">per night</div>
+                  <div class="desc text-center">We are just a button away to answer any of your questions and get you set up for your next procedure.</div>
+                  <div class="facilities">
+                    <ul class="list-inline room-types">
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/double-bed.png">
+                          <div class="facility">Double Bed</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/Wifi.png">
+                          <div class="facility">Wifi</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/apple-tv.png">
+                          <div class="facility">Apple Tv</div>
+                        </div>
+                      </li>
+                      <li class="list-inline-item">
+                        <div class="facility_box">
+                          <img src="img/room_type/private-line.png">
+                          <div class="facility">Private Line</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="">
+                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="#services">Learn More</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="#services">Request Booking</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonial">
+      <div class="testimonial_wrap">
+        <div class="message_baloon_left">
+          <img src="img/testimonials/message-01.png" alt="">
+        </div>
+        <div class="message_baloon_right">
+          <img src="img/testimonials/message-02.png" alt="">
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-content-box">
+                <div class="heading text-uppercase">What people say...</div>
+                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
+                <div class="guest_name text-uppercase">LILLY L.</div>
+                <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-content-box">
+                <div class="heading text-uppercase">What people say...</div>
+                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
+                <div class="guest_name text-uppercase">LILLY L.</div>
+                <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-content-box">
+                <div class="heading text-uppercase">What people say...</div>
+                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
+                <div class="guest_name text-uppercase">LILLY L.</div>
+                <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="icons icon-arrow-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="icons icon-arrow-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- images -->
+    <section id="gallery">
+      <div class="images_wrap">
+        <div class="slider">
+          <div id="slider" class="flexslider">
+            <ul class="slides">
               <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
                 </div>
               </li>
               <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
+              <li>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+              <li>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-02.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/images/photo-03.jpg" />
+                <!-- caption -->
+                <div class="image_caption">
+                  <div class="lfloat image_caption_heading text-center">Large Room</div>
+                  <div class="lfloat image_desc">An impressive large comfortable room fitted with adjustable tempurpedic foam matress. We believe beautiful fresh flowers changed weekly to promote healing. Patients can get lost in the panoramic scenery, art on the walls or hd tv with all the channels. Friends are always a phone call away on a private line.</div>
+                  <div class="clear"></div>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
+          <div id="images_carousel" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-02.png" />
+              </li>
+              <li>
+                <img src="img/images/photo-thumb-03.png" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -748,6 +871,7 @@
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->

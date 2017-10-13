@@ -50,3 +50,18 @@ section#contact {
     color: $theme-danger;
   }
 }
+.live-chat-block {
+  padding: 15px 0;
+  background-color: #3C4557;
+}
+.live-chat-ques{
+  font-size: 25px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  top: 5px;
+}
+section#live_chat{
+  padding: 0;
+}

@@ -3,3 +3,17 @@
   margin: 15px 0;
   text-transform: none;
 }
+.service_box{
+	text-align: center;
+  color:$theme-primary;
+  background-image: url('../img/services/services-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  padding: 40px;
+  @include background-cover;
+  .section-heading{
+  	font-size: 35px;
+  	-webkit-font-smoothing: antialiased;
+  }
+}

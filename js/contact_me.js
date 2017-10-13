@@ -73,3 +73,26 @@ $(function() {
 $('#name').focus(function() {
   $('#success').html('');
 });
+
+// $(window).load(function(){
+  $('#images_carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 150,
+        itemMargin: 0,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#images_carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+// });

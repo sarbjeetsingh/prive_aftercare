@@ -34,3 +34,59 @@
   @include antialiased;
   padding: .5rem 3.5rem;
 }
+.btn-white{
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 120px;
+  border-radius: 3px;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+  background-color: #fff;
+  color: #000;
+  text-transform: capitalize;
+}
+.btn-white:hover{
+  background-color: #fff;
+  color: #000;
+}
+.room_type_box .carousel-indicators{
+  bottom: auto;
+  top: 10px;
+}
+.room_type_box .carousel-inner{
+  padding: 40px 25px;
+}
+.room_type_box .carousel-indicators li{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.room_type_box .carousel-indicators li.active{
+  background-color: white;
+}
+.btn-in-room-type{
+  @include button-variant(#232A37, rgba(255,255,255,0.14), #232A37);
+  border-width: 2px;
+  font-size: 18px;
+  border-radius: 0;
+  box-shadow: none;
+  @include antialiased;
+  border-radius: 4px;
+  text-align:center;
+  width: 221px;
+}
+.lfloat{
+  float: left;
+}
+.rfloat{
+  float:right;
+}
+.ml-20{
+  margin-left: 20px;
+}
+

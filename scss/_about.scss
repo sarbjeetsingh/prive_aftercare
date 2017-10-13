@@ -1,0 +1,84 @@
+// Styling for the About
+.about_box {
+  text-align: center;
+  color:$theme-primary;
+  background-image: url('../img/about/about-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  height: 100vh;
+  padding: 40px;
+  @include background-cover;
+  .intro-text {
+    .intro-lead-in {
+      font-size: 25px;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 5px;
+      @include body-font;
+      @include antialiased;
+      padding-top: 3rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+section#about{
+  padding: 0;
+}
+.about_wrap{
+  position: absolute;
+  left: 1%;
+  float:left;
+  width: 720px;
+  height: 420px;
+  padding: 117px 96px;
+  color: #fff;
+  background-color: rgba(135, 163, 175, 0.28);
+  border: 4px solid #fff;
+  z-index: 0;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  div{
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.1px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.50);
+    -webkit-font-smoothing: antialiased;
+  }
+  h4{
+    font-size: 25px;
+  }
+}
+.mission_wrap{
+  position: relative;
+  float:right;
+  width: 720px;
+  height: 420px;
+  padding: 117px 80px;
+  color: #fff;
+  background-color: rgba(135, 163, 175, 0.28);
+  border: 4px solid #fff;
+  z-index: 1;
+  top: 300px;
+  right: 1%;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  div{
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.1px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.50);
+    -webkit-font-smoothing: antialiased;
+  }
+  h4{
+    font-size: 25px;
+  }
+}

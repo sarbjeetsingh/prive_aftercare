@@ -1,0 +1,84 @@
+#room_type{
+	padding: 0;
+}
+.room_type_box{
+	text-align: center;
+  color:$theme-primary;
+  background-image: url('../img/room_type/room-type-01.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  padding: 160px 20px;
+  @include background-cover;
+  .outer_box{
+  	width: 720px;
+  	min-height: 500px;
+  	padding: 10px;
+  	background-color: rgba(255, 255, 255, 0.70);
+  	margin: 0 auto;
+  }
+  h4{
+		font-size: 34px;
+		color: #232A37;
+		letter-spacing: -0.02px;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased;
+		margin-top: 5px;
+    margin-bottom: 25px
+  }
+  .price{
+		font-size: 30px;
+		color: #232A37;
+		letter-spacing: 0.48px;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased;
+  }
+  .duration{
+		font-size: 12px;
+		color: #232A37;
+		letter-spacing: 0.4px;
+		line-height: 14px;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased;
+  }
+  .desc{
+		font-size: 16px;
+		color: #232A37;
+		letter-spacing: 0;
+		line-height: 25px;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased;
+		padding: 25px 105px;
+  }
+  .facility{
+  	font-size: 12px;
+		color: #232A37;
+		letter-spacing: 0.4px;
+		line-height: 14px;
+		font-weight: 200;
+		-webkit-font-smoothing: antialiased;
+  }
+  .facilities{
+  	margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .room-types li{
+  	vertical-align: top;
+	  width: 20%;
+	  line-height: 40px;
+	  -webkit-transition: all .3s;
+	  -moz-transition: all .3s;
+	  transition: all .3s;
+	  outline: 0;
+	  color: #232a37;
+  }
+  .room-types li .facility{
+	  line-height: 40px;
+	  display: block;
+	  width: 100%;
+	  -webkit-transition: all .3s;
+	  -moz-transition: all .3s;
+	  transition: all .3s;
+	  outline: 0;
+	}
+}
