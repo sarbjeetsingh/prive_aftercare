@@ -17,3 +17,10 @@
   	-webkit-font-smoothing: antialiased;
   }
 }
+@media(max-width:992px) {
+  .service_box{
+    .portfolio-hover-content{
+      padding: 5px;
+    }
+  }
+}

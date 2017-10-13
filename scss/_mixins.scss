@@ -81,3 +81,7 @@
   font-family: 'Avenir-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
+@mixin animateSlow{
+  -webkit-animation-duration: 2000ms !important;
+  animation-duration: 2000ms !important;
+}

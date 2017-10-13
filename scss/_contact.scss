@@ -1,5 +1,6 @@
-// Styling for the contact section
+/*Styling for the contact section*/
 section#contact {
+  padding: 0 0 50px;
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -100,4 +101,21 @@ label.address+p{
 }
 .contact-form-row{
   padding-top: 70px;
+}
+.left_box{
+  left: -50%;
+  @include animateSlow;
+}
+.right_box{
+  right: -50%;
+  @include animateSlow;
+}
+#gmap_canvas{
+  height: 338px;
+  width: 100%;
+}
+@media(max-width: 500px){
+  .left_box{
+    margin-bottom: 20px;
+  }
 }

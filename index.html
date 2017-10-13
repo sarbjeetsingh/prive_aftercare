@@ -102,13 +102,13 @@
     <!-- About -->
     <section id="about">
       <div class="about_box">
-        <div class="about_wrap animated slideInLeft">
+        <div class="about_wrap animated">
           <h4>ABOUT</h4>
-          <div class="text-left">Privé Luxury Recovery/Retreat provides serene rest and recovery to clients within the Hollywood and Los Angeles Area.</div>
+          <div class="desc">Privé Luxury Recovery/Retreat provides serene rest and recovery to clients within the Hollywood and Los Angeles Area.</div>
         </div>
-        <div class="mission_wrap animated slideInRight">
+        <div class="mission_wrap animated">
           <h4>OUR MISSION</h4>
-          <div class="text-left">We are here to provide a worry free spa like medical retreat for our clients to recover and rejuvenate in a five star hotel environment.</div>
+          <div class="desc">We are here to provide a worry free spa like medical retreat for our clients to recover and rejuvenate in a five star hotel environment.</div>
         </div>
         <div class="clear"></div>
       </div>
@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -141,7 +141,7 @@
                 <p class="text-muted">Illustration</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -151,14 +151,14 @@
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service-2.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Explore</h4>
                 <p class="text-muted">Graphic Design</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -175,7 +175,7 @@
                 <p class="text-muted">Identity</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -185,14 +185,14 @@
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service-2.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Lines</h4>
                 <p class="text-muted">Branding</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -209,7 +209,7 @@
                 <p class="text-muted">Website Design</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -219,14 +219,14 @@
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service-2.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Window</h4>
                 <p class="text-muted">Photography</p>
               </div> -->
             </div>
-            <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item animated">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -243,7 +243,7 @@
                   <p class="text-muted">Branding</p>
                 </div> -->
               </div>
-              <div class="col-md-3 col-sm-6 portfolio-item">
+              <div class="col-md-3 col-sm-6 portfolio-item animated">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -253,7 +253,7 @@
                       </div>
                     </div>
                   </div>
-                  <img class="img-fluid" src="img/services/service-1.png" alt="">
+                  <img class="img-fluid" src="img/services/service-2.png" alt="">
                 </a>
                 <!-- <div class="portfolio-caption">
                   <h4>Southwest</h4>
@@ -269,14 +269,16 @@
     <section id="room_type">
       <div class="room_type_box">
         <div class="outer_box">
-          <div id="roomTypeCarousal" class="carousel" data-ride="carousel">
+          <div id="roomTypeCarousal" class="carousel" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
               <li data-target="#roomTypeCarousal" data-slide-to="0" class="active"></li>
               <li data-target="#roomTypeCarousal" data-slide-to="1"></li>
             </ol>
+
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="inner_box">
+              <div class="carousel-item active large_room animated">
+                <!-- <img src="img/room_type/room-type-01.jpg" alt="large room"> -->
+                <div class="inner_box animated zoomIn">
                   <h4 class="text-capitalize">Large Room</h4>
                   <div class="price">$1,500</div>
                   <div class="duration">per night</div>
@@ -316,10 +318,12 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="inner_box">
+
+              <div class="carousel-item small_room">
+                <!-- <img src="img/header-bg.jpg" alt="small room"> -->
+                <div class="inner_box animated zoomIn">
                   <h4 class="text-capitalize">Small Room</h4>
-                  <div class="price">$1,500</div>
+                  <div class="price">$750</div>
                   <div class="duration">per night</div>
                   <div class="desc text-center">We are just a button away to answer any of your questions and get you set up for your next procedure.</div>
                   <div class="facilities">
@@ -340,12 +344,6 @@
                         <div class="facility_box">
                           <img src="img/room_type/apple-tv.png">
                           <div class="facility">Apple Tv</div>
-                        </div>
-                      </li>
-                      <li class="list-inline-item">
-                        <div class="facility_box">
-                          <img src="img/room_type/private-line.png">
-                          <div class="facility">Private Line</div>
                         </div>
                       </li>
                     </ul>
@@ -574,12 +572,13 @@
     <!-- Contact -->
     <section id="contact">
       <div class="map">
-        <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0LCBMb3MgQW5nZWxlcywgQ0EgOTAwNDgsIFVTQQ&key=AIzaSyBbwA3khFDMdiaJ6hkwCRJCN1VjyZTmw4s" allowfullscreen></iframe>
+        <!-- <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0LCBMb3MgQW5nZWxlcywgQ0EgOTAwNDgsIFVTQQ&key=AIzaSyBbwA3khFDMdiaJ6hkwCRJCN1VjyZTmw4s" allowfullscreen></iframe> -->
+<div id="gmap_canvas"></div>
       </div>
       <div class="container">
         <div class="row contact-form-row">
-          <div class="col-md-6">
+          <div class="col-md-6 left_box">
             <h2 class="section-heading">Get in touch</h2>
             <label class="address">Phone</label>
             <p>310-555-1234</p>
@@ -589,7 +588,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
             <p>contact@privecare.com</p>
             <button class="btn btn-default">Chat</button>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 right_box">
               <form id="contactForm" name="sentMessage" novalidate>
                 <div class="row">
                   <div class="col-md-6">
@@ -930,6 +929,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
@@ -938,6 +938,8 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+
 
   </body>
 

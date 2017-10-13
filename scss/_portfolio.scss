@@ -9,6 +9,7 @@
       max-width: 400px;
       margin: 0 auto;
       cursor: pointer;
+      @include animateSlow;
       .portfolio-hover {
         position: absolute;
         width: 100%;
@@ -164,4 +165,7 @@
 }
 .bg-light#portfolio{
   padding: 0;
+}
+.hidden{
+  visibility: hidden;
 }

@@ -58,3 +58,23 @@
 		margin-bottom: 10px;
   }
 }
+@media(max-width: 768px){
+  .testimonial_wrap{
+    .carousel-control-next, .carousel-control-prev{
+      width: 15%;
+    }
+  }
+}
+@media(max-width: 400px){
+  .testimonial_wrap{
+    .carousel-control-next, .carousel-control-prev{
+      width: 2%;
+    }
+    .icons{
+      font-size: 16px;
+    }
+    .heading{
+      font-size: 22px;
+    }
+  }
+}

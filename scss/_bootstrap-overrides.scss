@@ -55,13 +55,6 @@
   background-color: #fff;
   color: #000;
 }
-.room_type_box .carousel-indicators{
-  bottom: auto;
-  top: 10px;
-}
-.room_type_box .carousel-inner{
-  padding: 40px 25px;
-}
 .room_type_box .carousel-indicators li{
   width: 12px;
   height: 12px;
@@ -155,4 +148,7 @@
 }
 .input-group-addon i{
   color:#9FA3A7;
+}
+.clear{
+  clear:both;
 }

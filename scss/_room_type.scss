@@ -4,18 +4,19 @@
 .room_type_box{
 	text-align: center;
   color:$theme-primary;
-  background-image: url('../img/room_type/room-type-01.jpg');
+  /*background-image: url('../img/room_type/room-type-01.jpg');*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  padding: 160px 20px;
+  /*padding: 160px 20px;*/
   @include background-cover;
   .outer_box{
-  	width: 720px;
+  	/*width: 720px;*/
   	min-height: 500px;
-  	padding: 10px;
-  	background-color: rgba(255, 255, 255, 0.70);
-  	margin: 0 auto;
+  	/*padding: 10px;*/
+  	/*background-color: rgba(255, 255, 255, 0.70);*/
+  	/*margin: 0 auto;*/
+  	/*padding: 160px 20px;*/
   }
   h4{
 		font-size: 34px;
@@ -80,5 +81,69 @@
 	  -moz-transition: all .3s;
 	  transition: all .3s;
 	  outline: 0;
+	}
+	.large_room{
+		background-image: url('../img/room_type/room-type-01.jpg');
+	}
+	.large_room, .small_room{
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  background-position: center center;
+	  /*padding: 160px 20px;*/
+	  @include background-cover;
+	  min-height: 820px;
+	  -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+	}
+	.small_room{
+		background-image: url('../img/header-bg.jpg');
+	}
+	.inner_box{
+		width: 720px;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, 0.70);
+		padding-top: 70px;
+    position: relative;
+    top: 150px;
+    height: 100%;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+	}
+	.carousel-indicators{
+	  bottom: auto;
+	  top: 175px;
+	  margin-bottom: 0;
+	}
+	.carousel-inner{
+  	/*padding: 40px 25px;*/
+	}
+	.full_opacity{
+		opacity: 1;
+	}
+}
+@media(max-width:768px) {
+	.room_type_box{
+		.inner_box{
+			width: 500px;
+		}
+	}
+}
+@media(max-width:500px) {
+	.room_type_box{
+		.inner_box{
+			width: 300px;
+		}
+		.desc{
+			padding: 0;
+		}
+		.btn-in-room-type{
+			display: block;
+			margin: 10px auto;
+			float: none !important;
+		}
 	}
 }
