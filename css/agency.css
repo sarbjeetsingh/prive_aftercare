@@ -149,7 +149,7 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 378px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 25px;
@@ -162,7 +162,7 @@ header.masthead {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 20px;
-      padding-top: 285px;
+      padding-top: 200px;
       font-family: 'Avenir-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 
 .service-heading {
