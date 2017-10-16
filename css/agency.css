@@ -149,8 +149,8 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 378px;
-    padding-bottom: 100px; }
+    padding-top: 37%;
+    /*padding-bottom: 100px;*/ }
     header.masthead .intro-text .intro-lead-in {
       font-size: 25px;
       line-height: 40px;
@@ -162,12 +162,15 @@ header.masthead {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 20px;
-      padding-top: 200px;
+      padding-top: 20%;
       font-family: 'Avenir-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
+
+.pd-row {
+  padding-top: 8%; }
 
 .service_box {
   text-align: center;
@@ -176,7 +179,11 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  padding: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -590,6 +597,12 @@ label.address + p {
   height: 338px;
   width: 100%; }
 
+.no_resize {
+  resize: none; }
+
+.gm-style .gm-style-iw {
+  font-size: 18px; }
+
 @media (max-width: 500px) {
   .left_box {
     margin-bottom: 20px; } }
@@ -649,7 +662,7 @@ ul.social-buttons {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  min-height: 820px;
+  height: 100vh;
   padding: 40px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -783,6 +796,7 @@ section#about {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  height: 100vh;
   /*padding: 160px 20px;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -867,7 +881,7 @@ section#about {
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
-    opacity: 0; }
+    /*opacity: 0;*/ }
   .room_type_box .small_room {
     background-image: url("../img/header-bg.jpg"); }
   .room_type_box .inner_box {
@@ -914,13 +928,15 @@ section#about {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  padding: 160px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  min-height: 700px; }
+  height: 100vh; }
   .testimonial_wrap .message_baloon_left {
     position: absolute;
     left: 0px;
@@ -975,39 +991,38 @@ section#about {
 #gallery {
   padding: 0; }
 
-.images_wrap .flexslider {
-  margin: 0;
-  border: none;
-  background: transparent; }
-
-.images_wrap .image_caption {
-  padding: 20px 30px;
-  background-color: rgba(248, 244, 240, 0.46);
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0; }
-
-.images_wrap .image_caption_heading {
-  width: 15%;
-  font-size: 18px;
-  color: #232A37;
-  letter-spacing: 0.36px;
-  padding-top: 9px;
-  -webkit-font-smoothing: antialiased; }
-
-.images_wrap .image_desc {
-  width: 80%;
-  font-size: 14px;
-  color: #232A37;
-  letter-spacing: 0.36px;
-  -webkit-font-smoothing: antialiased; }
-
-.images_wrap .flex-direction-nav {
-  display: none; }
-
-.images_wrap .flexslider .slides > li {
-  position: relative; }
+.images_wrap {
+  height: 100vh; }
+  .images_wrap .top-section {
+    height: 78vh; }
+  .images_wrap .flexslider {
+    margin: 0;
+    border: none;
+    background: transparent; }
+  .images_wrap .image_caption {
+    padding: 20px 30px;
+    background-color: rgba(248, 244, 240, 0.46);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 83px; }
+  .images_wrap .image_caption_heading {
+    width: 15%;
+    font-size: 18px;
+    color: #232A37;
+    letter-spacing: 0.36px;
+    padding-top: 9px;
+    -webkit-font-smoothing: antialiased; }
+  .images_wrap .image_desc {
+    width: 80%;
+    font-size: 14px;
+    color: #232A37;
+    letter-spacing: 0.36px;
+    -webkit-font-smoothing: antialiased; }
+  .images_wrap .flex-direction-nav {
+    display: none; }
+  .images_wrap .flexslider .slides > li {
+    position: relative; }
 
 @media (max-width: 820px) {
   .images_wrap .image_caption {

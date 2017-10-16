@@ -3,6 +3,9 @@
   margin: 15px 0;
   text-transform: none;
 }
+.pd-row{
+  padding-top: 8%;
+}
 .service_box{
 	text-align: center;
   color:$theme-primary;
@@ -10,7 +13,11 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  padding: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  height: 100vh;
   @include background-cover;
   .section-heading{
   	font-size: 35px;

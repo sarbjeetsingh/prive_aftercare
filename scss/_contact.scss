@@ -114,6 +114,12 @@ label.address+p{
   height: 338px;
   width: 100%;
 }
+.no_resize{
+  resize: none;
+}
+.gm-style .gm-style-iw{
+  font-size: 18px;
+}
 @media(max-width: 500px){
   .left_box{
     margin-bottom: 20px;

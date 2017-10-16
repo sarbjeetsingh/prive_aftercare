@@ -2,6 +2,10 @@
 	padding: 0;
 }
 .images_wrap{
+	height: 100vh;
+	.top-section{
+		height: 78vh;
+	}
 	.flexslider{
 		margin: 0;
 		border: none;
@@ -13,7 +17,7 @@
 		position: absolute;
     width: 100%;
     left: 0;
-    bottom: 0;
+    bottom: 83px;
 	}
 	.image_caption_heading{
 		width: 15%;

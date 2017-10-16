@@ -30,8 +30,8 @@ header.masthead {
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
-      padding-top: 378px;
-      padding-bottom: 100px;
+      padding-top: 37%;
+      /*padding-bottom: 100px;*/
       .intro-lead-in {
         font-size: 25px;
         line-height: 40px;
@@ -44,7 +44,7 @@ header.masthead {
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 20px;
-        padding-top: 200px;
+        padding-top: 20%;
         @include body-font;
       }
     }

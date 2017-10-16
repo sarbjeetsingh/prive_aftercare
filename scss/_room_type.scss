@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  height: 100vh;
   /*padding: 160px 20px;*/
   @include background-cover;
   .outer_box{
@@ -96,7 +97,7 @@
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
-    opacity: 0;
+    /*opacity: 0;*/
 	}
 	.small_room{
 		background-image: url('../img/header-bg.jpg');

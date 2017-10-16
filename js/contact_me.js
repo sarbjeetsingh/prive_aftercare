@@ -122,18 +122,18 @@ $(window).scroll(function(){
       $('.right_box').addClass('right-1 slideInRight');
     }
     else{
-      // $('.left_box').removeClass('left-1 slideInLeft');
-      // $('.right_box').removeClass('right-1 slideInRight');
+      $('.left_box').removeClass('left-1 slideInLeft');
+      $('.right_box').removeClass('right-1 slideInRight');
     }
 
-    if (top_offset >= 1950){
-      $('.room_type_box .inner_box').addClass('zoomIn').removeClass('hidden');
-      $('.large_room, .small_room').addClass('full_opacity');
-    }
-    else{
-      $('.room_type_box .inner_box').removeClass('zoomIn').addClass('hidden');
-      $('.large_room, .small_room').removeClass('full_opacity');
-    }
+    // if (top_offset >= 1950){
+    //   $('.room_type_box .inner_box').addClass('zoomIn').removeClass('hidden');
+    //   $('.large_room, .small_room').addClass('full_opacity');
+    // }
+    // else{
+    //   $('.room_type_box .inner_box').removeClass('zoomIn').addClass('hidden');
+    //   $('.large_room, .small_room').removeClass('full_opacity');
+    // }
 });
 
 function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(34.0731665,-118.3745462),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(34.0731665,-118.3745462)});infowindow = new google.maps.InfoWindow({content:'<strong>Prive Aftercare</strong><br>8438 West 3rd Street, Los Angeles, CA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);

@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  min-height: 820px;
+  height: 100vh;
   padding: 40px;
   @include background-cover;
   .intro-text {
