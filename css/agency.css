@@ -1286,6 +1286,10 @@ section#about {
     margin-left: auto;
     margin-right: auto;
     font-family: 'SourceSansPro-Italic', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .testimonial_wrap .comments.first {
+    margin-top: 150px; }
+  .testimonial_wrap .comments.third, .testimonial_wrap .comments.second {
+    margin-top: 80px; }
   .testimonial_wrap .guest_name {
     font-size: 25px;
     color: #232A37;
@@ -1308,11 +1312,11 @@ section#about {
 
 @media (min-height: 800px) {
   .testimonial_wrap {
-    height: 100vh; } }
+    min-height: 750px; } }
 
 @media (max-height: 800px) {
   .testimonial_wrap {
-    min-height: 800px;
+    min-height: 750px;
     height: 100%; } }
 
 #gallery {

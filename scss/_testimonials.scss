@@ -54,6 +54,12 @@
     margin-right: auto;
     @include sourceSansPro-Italic-font;
   }
+  .comments.first{
+    margin-top: 150px;
+  }
+  .comments.third,.comments.second{
+    margin-top: 80px;
+  }
   .guest_name{
 		font-size: 25px;
 		color: #232A37;
@@ -85,12 +91,12 @@
 }
 @media(min-height: 800px){
   .testimonial_wrap{
-    height: 100vh;
+    min-height: 750px;
   }
 }
 @media(max-height: 800px){
   .testimonial_wrap{
-    min-height: 800px;
+    min-height: 750px;
     height: 100%;
   }
 }
