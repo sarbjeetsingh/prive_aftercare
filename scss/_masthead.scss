@@ -8,17 +8,19 @@ header.masthead {
   background-position: center center;
   height: 100vh;
   @include background-cover;
-  @include animateSlow;
+  -webkit-animation-duration: 0.5s!important;
+  animation-duration: 0.5s!important;
   .intro-text {
     .intro-lead-in {
       font-size: 25px;
-      line-height: 22px;
+      line-height: 25px;
       margin-bottom: 25px;
       @include tienne-Regular-font;
       color: #3C4557;
+      padding-top: 18px;
     }
     .intro-heading {
-      font-size: 25px;
+      font-size: 55px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 5px;
@@ -80,6 +82,28 @@ header.masthead {
     }
   }
 }
+@media(max-width:767px){
+  .live-chat-ques{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media(max-height: 500px){
+  header.masthead .intro-text{
+    padding-top:100px;
+  }
+  header.masthead .intro-text .intro-heading{
+    padding-top: 100px;
+  }
+}
+@media(min-height: 500px) and (max-height: 600px){
+  header.masthead .intro-text{
+    padding-top: 23%;
+  }
+  header.masthead .intro-text .intro-heading{
+    padding-top: 9%;
+  }
+}
 @media(min-height: 600px) and (max-height: 700px){
   header.masthead .intro-text{
     padding-top: 23%;
@@ -114,6 +138,17 @@ header.masthead {
 @media(min-height: 960px) and (max-height: 1080px){
   header.masthead .intro-text{
     padding-top: 43%;
+  }
+}
+@media(max-width:500px) and (max-height:600px){
+  header.masthead .intro-text{
+    padding-top: 28%;
+  }
+  header.masthead .intro-text .intro-heading{
+    padding-top: 27%;   
+  }
+  header.masthead .intro-text .intro-lead-in{
+    padding-top: 38px;
   }
 }
 

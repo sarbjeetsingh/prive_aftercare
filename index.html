@@ -28,7 +28,9 @@
   </head>
 
   <body id="page-top">
-
+    <div class="preloader">
+      <img src="img/loader.gif" alt="">
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -72,7 +74,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead animated zoomIn ">
+    <header class="masthead animated zoomInSmall ">
       <div class="container">
         <div class="intro-text">
           <a class="btn btn-in-header watch_video_btn js-scroll-trigger" href="" data-toggle="modal" id="videoPlayerBtn">Watch Video</a>
@@ -274,9 +276,9 @@
             </ol>
 
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active large_room animated">
+              <div class="carousel-item active large_room animated fadeInSmall">
                 <!-- <img src="img/room_type/room-type-01.jpg" alt="large room"> -->
-                <div class="inner_box animated slideInLeft">
+                <div class="inner_box animated slideInLeftFadeIn">
                   <h4 class="text-capitalize">Large Room</h4>
                   <div class="price">$1,500</div>
                   <div class="duration">per night</div>
@@ -312,15 +314,15 @@
                   <div class="detail text-center animated hide" id="l_detail">King sized bed, in a huge room that accommodates one companion with large sitting and lounge space. Large cable flat screen and a gorgeous view overlooking Hollywood and Los Angeles Hills. Only minutes walk to shopping malls, Beverly Center, Beverly Connection, and a hop away from the Grove. Beautiful clean open bathrooms with a large double door shower, bright and airy space.</div>
                   <div class="">
                     <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="" id="l_show_more">Learn More</a>
-                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="" id="request_booking_btn">Request Booking</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat request_booking_btn" href="#">Request Booking</a>
                     <div class="clear"></div>
                   </div>
                 </div>
               </div>
 
-              <div class="carousel-item small_room">
+              <div class="carousel-item small_room animated fadeInSmall">
                 <!-- <img src="img/header-bg.jpg" alt="small room"> -->
-                <div class="inner_box animated slideInRight">
+                <div class="inner_box animated slideInLeftFadeIn">
                   <h4 class="text-capitalize">Small Room</h4>
                   <div class="price">$750</div>
                   <div class="duration">per night</div>
@@ -352,7 +354,7 @@
                   </div>
                   <div class="">
                     <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="" id="s_show_more">Learn More</a>
-                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="" id="request_booking_btn">Request Booking</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat request_booking_btn" href="#">Request Booking</a>
                     <div class="clear"></div>
                   </div>
                 </div>
@@ -599,7 +601,8 @@
     <!-- Contact -->
     <section id="contact">
       <div class="map">
-        <div id="gmap_canvas"></div>
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0LCBMb3MgQW5nZWxlcywgQ0EgOTAwNDgsIFVTQQ&key=AIzaSyCeKu0O-Z9r3kPfTBk_btArla36E6Vql2w" allowfullscreen></iframe>
+        <!-- <div id="gmap_canvas"></div> -->
       </div>
       <div class="container">
         <div class="row contact-form-row">
@@ -671,7 +674,7 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row footer-top">
+        <div class="row footer-top hide">
           <div class="col-md-3">
             <ul class="list-group link-list">
               <li class="list-group-item active">Services</li>
@@ -728,18 +731,18 @@
             </div>
             <div class="col-md-3">
               <ul class="list-group footer-bottom-list">
-                <li class="list-group-item"><a href="#">PRIVATE POLICY</a></li>
+                <li class="list-group-item"><a href="#" data-toggle="modal" data-target="#privacyPolicyModal">PRIVATE POLICY</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <ul class="list-group footer-bottom-list">
 
-                <li class="list-group-item"><a href="#">TERMS & CONDITIONS</a></li>
+                <li class="list-group-item "><a class="js-scroll-trigger" href="#about">ABOUT US</a></li>
               </ul>
             </div>
             <div class="col-md-3">
                 <ul class="list-group footer-bottom-list">
-                <li class="list-group-item"><a href="#"> COPYRIGHT NOTIFICATIONS</a> </li>
+                <li class="list-group-item "><a class="js-scroll-trigger" href="#contact">CONTACT</a> </li>
               </ul>
             </div>
           </div>
@@ -763,14 +766,85 @@
         </div>
     </div>
 
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2>Privacy Policy</h2>
+                    <p class="item-intro text-muted">Prive follows strict policies and procedures to ensure patient information in our possession remains secure and confidential. The following “Joint Notice of Privacy Practices for Health Information” is federally required of us and elaborates on the specifics..</p>
+                    
+                    <p><b>Our pledge to you:</b></p>
+                    <p>We understand that medical information about you is private and personal. We are committed to protecting it. Each time a call is made, medication is deliver or a nurse is doing a visit a record is made. This notice applies to the records of your care at Prive Care. Your doctor and other health care providers may have different practices or notices about their use and sharing of medical information in their own offices or clinic. We will gladly explain this notice to you or your family member.</p>
+                    <p><b>We are required by law to: *</b></p>
+                    <p>Keep medical information about you private * Give you this notice describing our legal duties and privacy practices for medical information about you. * Follow the terms of the notice that is currently in effect.</p>
+                    <p><b>How we may use and share your medical information:</b></p>
+                    <p>This section of our notice tells how we may use medical information about you. In all cases not covered by this notice, we will get a separate written permission from you before we use or share your medical information. You can later cancel your permission by notifying us in writing. We will protect medical information as much as we can under the law. Sometimes state law gives protection to medical information than federal law. Sometimes federal law gives more protection than state. In each case, we will apply the laws that protect medical information the most. We may use or share medical information about you with any hospital that is a part of your care team for treatment, payment and health care operations.</p>
+                    <p><b>Treatment:</b></p>
+                    <p>We will use and share medical information about you for purposes of treatment. An example is sending medical information about you to your doctor or nurse.</p>
+                    <p><b>Payment:</b></p>
+                    <p>We will use and share medical information about you so we can be paid for treatment.</p>
+                    <p><b>Health care operations:</b></p>
+                    <p>We will use and share medical information about you or our health care operations. Example, using information about you to improve the quality of care we give you, for patient satisfaction surveys, compiling medical information, de-identifying medical information and benchmarking.</p>
+                    <p><b>Treatment options and health-related benefits and services:
+                      </b></p>
+                      <p>We may contact you about possible treatment options, health-related benefits or services that you might want.</p>
+                      <p><b>Research:</b></p>
+                      <p>We may share your medical information for research projects, such as studying the effectiveness of a treatment you received. We will usually get your written permission to use or share medical information for research. Under certain circumstances we may share medical information about you without your written permission however research projects must go through a special process that protects the confidentiality of your medical information.</p>
+                      <p><b>Public Health:</b></p>
+                      <p>We may use or share medical information for public health purposes. We may also report problems with medicines or medical products to manufacturer and to the FDA. We may tell you about recalls of products you are using.</p>
+                    <p><b>Required by law:</b></p>
+                    <p>We are sometimes required by law to report certain information. For example, we must give information to your employer about work-related illness, injury, or work-place-related medical surveillance.</p>
+                    <p><b>Military, Veterans, National Security and other Government Purpose:</b></p>
+                    <p>We may use or share medical information about you for national security purposes. We may share medical information about you with the military for military command purposes when you are a member of the armed forces.
+                      </p>
+                      <p><b>Judicial Proceedings:</b></p>
+                      <p>We may use or share medical information about you in response to court orders or subpoenas only when we have followed procedures required by law.</p>
+                      <p><b>Family members and other involved in your care:</b></p>
+                      <p>Unless you tell us otherwise, We may share medical information about you with friends, family members, or others you have named who help with your care. We may use or share medical information about you with disaster organizations so that your family can be notified of your location and condition in case of disaster or other emergency.</p>
+                      <p><b>Your Rights Regarding Medical Information Requesting Information about You:</b></p>
+                      <p>In most cases, when you ask in writing, you can look at or get a copy of medical information about you. You can look at medical information about you for free. If you request copies of the information we may charge a fee for cost of copying, mailing or other related supplies.</p>
+                      <p><b>Correcting Information about You:</b></p>
+                      <p>If you believe that information about you is wrong or missing, you can ask us in writing to correct the records. We may say no to your request to correct a record if the information was not created or kept by us or if we determine the record is complete and correct.
+                        </p>
+                        <p><b>Obtaining a List of Certain Disclosures of Information:
+                          </b></p>
+                          <p>You can ask in writing for a listing of every time we shared medical information about you, other than for treatment, payment, health care operations or where you have given us written permission for the sharing. Your request must state the time period for listing, which must be less than 6 years starting after April14, 2003. The first request in a 12-month period is free. We will charge you for any additional requests for our cost of producing the list. We will give an estimate of cost when you request the additional list.</p>
+                          <p><b>Restricting How We Use or Share Information about you:</b></p>
+                          <p>You can ask that medical information be given to you in a confidential manner. You must tell us in writing of the exact way or place for us to communicate with you. You also can ask in writing that we limit our use or sharing of medical information about you.
+                              Add Comment</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function (e) {
+        $('.preloader').fadeOut();
+      })
+      
+    
+    </script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script> -->
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>

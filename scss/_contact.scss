@@ -92,6 +92,7 @@ section#live_chat{
 }
 .live_chat_btn{
   @include sourceSansPro-Regular-font;
+  cursor: pointer
 }
 label.address{
   font-size: 14px;
@@ -137,5 +138,11 @@ label.address+p{
 @media(max-width: 768px){
   .top_margin{
     margin-top: 20px;
+  }
+  .left_box{
+    left: 1%;
+  }
+  .right_box{
+    right: 1%;
   }
 }

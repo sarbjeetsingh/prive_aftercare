@@ -128,9 +128,6 @@
 	  top: 175px;
 	  margin-bottom: 0;
 	}
-	.carousel-inner{
-  	/*padding: 40px 25px;*/
-	}
 	.full_opacity{
 		opacity: 1;
 	}
@@ -177,4 +174,9 @@
   .room_type_box .large_room, .room_type_box .small_room{
     min-height: 800px;
   }
+}
+@media (max-width:768px){
+	.room_type_box .room-types li .facility{
+		line-height: 13px;
+	}
 }
