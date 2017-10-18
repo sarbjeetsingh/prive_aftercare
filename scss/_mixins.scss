@@ -67,7 +67,124 @@
        url('../fonts/Avenir-Roman.woff') format('woff'),
        url('../fonts/Avenir-Roman.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'JosefinSans-bold';
+  src: url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+       url('../fonts/JosefinSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black.woff2') format('woff2'),
+       url('../fonts/Lato-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+       url('../fonts/Lato-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato-Light.woff2') format('woff2'),
+       url('../fonts/Lato-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+       url('../fonts/Lato-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+       url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+       url('../fonts/Raleway-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('../fonts/SourceSansPro-Black.woff2') format('woff2'),
+       url('../fonts/SourceSansPro-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+       url('../fonts/SourceSansPro-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'SourceSansPro-Italic';
+  src: url('../fonts/SourceSansPro-Italic.woff2') format('woff2'),
+       url('../fonts/SourceSansPro-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+       url('../fonts/SourceSansPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'SourceSansPro-SemiBold';
+  src: url('../fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+       url('../fonts/SourceSansPro-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Tienne-Regular';
+  src: url('../fonts/Tienne-Regular.woff2') format('woff2'),
+       url('../fonts/Tienne-Regular.woff') format('woff');
+}
 // Font Mixins
+@mixin aviner-roman-font {
+  font-family: 'Avenir-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin josefinsans-bold-font {
+  font-family: 'JosefinSans-bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin lato-black-font {
+  font-family: 'Lato-Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin lato-bold-font {
+  font-family: 'Lato-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin lato-light-font {
+  font-family: 'Lato-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin lato-regular-font {
+  font-family: 'Lato-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin montserrat-bold-font {
+  font-family: 'Montserrat-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin openSans-regular-font {
+  font-family: 'OpenSans-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin raleway-bold-font {
+  font-family: 'Raleway-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin sourceSansPro-Black-font {
+  font-family: 'SourceSansPro-Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin sourceSansPro-Bold-font {
+  font-family: 'SourceSansPro-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin sourceSansPro-Italic-font {
+  font-family: 'SourceSansPro-Italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin sourceSansPro-Regular-font {
+  font-family: 'SourceSansPro-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin sourceSansPro-SemiBold-font {
+  font-family: 'SourceSansPro-SemiBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin tienne-Regular-font {
+  font-family: 'Tienne-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
 @mixin serif-font {
   font-family: 'Avenir-Roman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

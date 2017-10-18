@@ -32,13 +32,19 @@
   @include heading-font;
 }
 .btn-in-header{
-  @include button-variant(white, rgba(255,255,255,0.14), #F8F4F0);
-  border-width: 2px;
+  color: white;
+  background:rgba(255,255,255,0.14);
+  border:2px solid #F8F4F0;
   font-size: 18px;
   border-radius: 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   @include antialiased;
   padding: .5rem 3.5rem;
+}
+.btn-in-header:hover{
+  color: white;
+  background: $theme-primary;
+  border-color:$theme-primary;
 }
 .btn-white{
   font-size: 18px;
@@ -50,10 +56,12 @@
   background-color: #fff;
   color: #000;
   text-transform: capitalize;
+  border:2px solid $theme-primary;
 }
 .btn-white:hover{
-  background-color: #fff;
-  color: #000;
+  background-color:$theme-primary;
+  color: white;
+  border-color:white; 
 }
 .room_type_box .carousel-indicators li{
   width: 12px;
@@ -69,8 +77,9 @@
   background-color: white;
 }
 .btn-in-room-type{
-  @include button-variant(#232A37, rgba(255,255,255,0.14), #232A37);
-  border-width: 2px;
+  color:$theme-primary;
+  background: rgba(255,255,255,0.14);
+  border:2px solid  #232A37;
   font-size: 18px;
   border-radius: 0;
   box-shadow: none;
@@ -78,6 +87,11 @@
   border-radius: 4px;
   text-align:center;
   width: 221px;
+}
+.btn-in-room-type:hover{
+  color:white;
+  background:$theme-primary;
+  border:2px solid  white;
 }
 .lfloat{
   float: left;
@@ -95,9 +109,12 @@
     background-color:transparent;
     border: none;
     text-align: left;
+    font-size: 12px;
+    @include montserrat-bold-font;
       a{
         color: $gray-lighter;
         font-size: 14px;
+        @include openSans-regular-font;
         @include antialiased;
         &:hover{
           text-decoration: none;
@@ -121,7 +138,7 @@
     margin-bottom: -1px;
     background-color:transparent;
     border: none;
-    text-align: left;
+    text-align: center;
       a{
         color: white;
         font-size: 14px;
@@ -151,4 +168,18 @@
 }
 .clear{
   clear:both;
+}
+.btn-default:hover{
+  background: $theme-primary;
+  color: white;
+  border-color:$theme-primary;
+}
+.slides li{
+  cursor: pointer;
+}
+@media(max-width:767px){
+  .btn-white{
+    padding: 10px 100px;
+    margin-left: 0 !important;
+  }
 }

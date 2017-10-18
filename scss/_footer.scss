@@ -45,11 +45,28 @@ ul.social-buttons {
     }
   }
 }
-.footer-bottom{
-  padding-top: 50px;
-  margin-top: 50px;
-  border-top:1px solid rgba(255, 255, 255, 0.10)
-}
+// .footer-bottom{
+//   padding-top: 50px;
+//   margin-top: 50px;
+//   border-top:1px solid rgba(255, 255, 255, 0.10)
+// }
 .footer-bottom h3{
   padding-top: 10px;
+}
+.footer-logo{
+  @include raleway-bold-font;
+}
+.footer-bottom-list{
+  a{
+    @include montserrat-bold-font;
+  }
+}
+@media(max-width:767px){
+  .footer-logo{
+    text-align: left;
+    padding: .75rem 1.25rem
+  }
+}
+.list-group.footer-bottom-list .list-group-item a:focus{
+  outline: none;
 }
