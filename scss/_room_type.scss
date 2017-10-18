@@ -8,13 +8,13 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  height: 100vh;
+  /*height: 100vh;*/
   /*padding: 160px 20px;*/
   @include background-cover;
   opacity: 0.8;
   .outer_box{
   	/*width: 720px;*/
-  	min-height: 500px;
+  	/*min-height: 500px;*/
   	/*padding: 10px;*/
   	/*background-color: rgba(255, 255, 255, 0.70);*/
   	/*margin: 0 auto;*/
@@ -99,12 +99,13 @@
 	  /*padding: 160px 20px;*/
 	  @include background-cover;
 	  /*min-height: 820px;*/
-	  min-height: 100vh;
+	  /*min-height: 100vh;*/
 	  -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
     /*opacity: 0;*/
+    padding-bottom: 150px;
 	}
 	.small_room{
 		background-image: url('../img/header-bg.jpg');
@@ -116,10 +117,11 @@
 		padding-top: 70px;
     position: relative;
     top: 150px;
-    height: 100%;
+    /*height: 100%;*/
     padding-bottom: 30px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 100px;
 	}
 	.carousel-indicators{
 	  bottom: auto;
@@ -161,4 +163,18 @@
 			float: none !important;
 		}
 	}
+}
+@media(min-height: 800px){
+  .room_type_box, .room_type_box .large_room, .room_type_box .small_room{
+    height: 100vh;
+  }
+}
+@media(max-height: 800px){
+  .room_type_box{
+    min-height: 800px;
+    height: 100%;
+  }
+  .room_type_box .large_room, .room_type_box .small_room{
+    min-height: 800px;
+  }
 }

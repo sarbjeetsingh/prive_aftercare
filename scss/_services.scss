@@ -20,7 +20,7 @@
   padding-right: 50px;
   padding-top: 7%;
   padding-bottom: 7%;
-  height: 100vh;
+  /*height: 100vh;*/
   @include background-cover;
   .section-heading{
   	font-size: 35px;
@@ -32,5 +32,20 @@
     .portfolio-hover-content{
       padding: 5px;
     }
+  }
+}
+@media(min-height: 800px){
+  .service_box{
+    height: 100vh;
+  }
+}
+@media(max-height: 800px){
+  .service_box{
+    height: 100%;
+  }
+}
+@media(min-height: 820px) and (max-width: 768px){
+  .service_box{
+    height: 100%;
   }
 }

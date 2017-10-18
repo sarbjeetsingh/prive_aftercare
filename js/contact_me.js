@@ -90,17 +90,13 @@ $('#name').focus(function() {
         controlNav: false,
         animationLoop: false,
         slideshow: false,
-        sync: "#images_carousel",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
+        sync: "#images_carousel"
       });
 // });
 
 function resize(){
   var top_offset = $(window).scrollTop();
   var windowWidth = $(window).width();
-  console.log(top_offset);
     if (top_offset >= 100){
       $('.about_wrap').addClass('slideInLeft');
       $('.mission_wrap').addClass('slideInRight');
@@ -195,6 +191,12 @@ $('#close_btn').on('click', function(){
 
 $('#sendMessageButton').on('click', function(){
   Tawk_API.toggle();
+});
+
+$('#roomTypeCarousal').on('slide.bs.carousel', function () {
+  $('#l_show_more').text("Learn More");
+  $('#s_show_more').text("Learn More");
+  $('#s_detail, #l_detail').addClass('hide')
 });
 
 // $(document).ready(function(){
