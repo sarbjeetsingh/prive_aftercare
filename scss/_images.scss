@@ -2,6 +2,10 @@
 	padding: 0;
 }
 .images_wrap{
+	height: 100vh;
+	.top-section{
+		height: 83.4%;
+	}
 	.flexslider{
 		margin: 0;
 		border: none;
@@ -13,7 +17,7 @@
 		position: absolute;
     width: 100%;
     left: 0;
-    bottom: 0;
+    bottom: 16%;
 	}
 	.image_caption_heading{
 		width: 15%;
@@ -22,6 +26,7 @@
 		letter-spacing: 0.36px;
 		padding-top: 9px;
 		-webkit-font-smoothing: antialiased;
+		@include lato-bold-font;
 	}
 	.image_desc{
 		width: 80%;
@@ -29,12 +34,16 @@
 		color: #232A37;
 		letter-spacing: 0.36px;
 		-webkit-font-smoothing: antialiased;
+		@include lato-regular-font;
 	}
 	.flex-direction-nav{
 		display: none;
 	}
 	.flexslider .slides > li{
 		position: relative;
+	}
+	.slider{
+		height: 100%;
 	}
 }
 @media(max-width: 820px){

@@ -6,12 +6,14 @@
   color:$theme-primary;
   background-image: url('../img/testimonials/testimonial-bg.jpg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
-  padding: 160px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18%;
   @include background-cover;
   position: relative;
-  min-height: 700px;
+  height: 100vh;
   .message_baloon_left{
   	position: absolute;
   	left: 0px;
@@ -38,6 +40,7 @@
 		color: #232A37;
 		letter-spacing: 0.6px;
 		-webkit-font-smoothing: antialiased;
+    @include lato-bold-font;
   }
   .comments{
 		font-size: 25px;
@@ -49,6 +52,7 @@
     width: 74%;
     margin-left: auto;
     margin-right: auto;
+    @include sourceSansPro-Italic-font;
   }
   .guest_name{
 		font-size: 25px;
@@ -56,6 +60,7 @@
 		letter-spacing: 0.5px;
 		-webkit-font-smoothing: antialiased;
 		margin-bottom: 10px;
+    @include sourceSansPro-Regular-font;
   }
 }
 @media(max-width: 768px){
@@ -78,3 +83,7 @@
     }
   }
 }
+.modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }

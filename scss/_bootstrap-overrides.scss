@@ -95,9 +95,12 @@
     background-color:transparent;
     border: none;
     text-align: left;
+    font-size: 12px;
+    @include montserrat-bold-font;
       a{
         color: $gray-lighter;
         font-size: 14px;
+        @include openSans-regular-font;
         @include antialiased;
         &:hover{
           text-decoration: none;

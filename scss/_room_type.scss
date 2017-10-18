@@ -8,8 +8,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  height: 100vh;
   /*padding: 160px 20px;*/
   @include background-cover;
+  opacity: 0.8;
   .outer_box{
   	/*width: 720px;*/
   	min-height: 500px;
@@ -25,7 +27,8 @@
 		font-weight: 200;
 		-webkit-font-smoothing: antialiased;
 		margin-top: 5px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    @include lato-bold-font;
   }
   .price{
 		font-size: 30px;
@@ -33,6 +36,7 @@
 		letter-spacing: 0.48px;
 		font-weight: 200;
 		-webkit-font-smoothing: antialiased;
+		@include sourceSansPro-Bold-font;
   }
   .duration{
 		font-size: 12px;
@@ -41,6 +45,7 @@
 		line-height: 14px;
 		font-weight: 200;
 		-webkit-font-smoothing: antialiased;
+		@include lato-regular-font;
   }
   .desc{
 		font-size: 16px;
@@ -50,6 +55,7 @@
 		font-weight: 200;
 		-webkit-font-smoothing: antialiased;
 		padding: 25px 105px;
+		@include lato-regular-font;
   }
   .facility{
   	font-size: 12px;
@@ -58,6 +64,7 @@
 		line-height: 14px;
 		font-weight: 200;
 		-webkit-font-smoothing: antialiased;
+		@include lato-light-font;
   }
   .facilities{
   	margin-top: 20px;
@@ -91,12 +98,13 @@
 	  background-position: center center;
 	  /*padding: 160px 20px;*/
 	  @include background-cover;
-	  min-height: 820px;
+	  /*min-height: 820px;*/
+	  min-height: 100vh;
 	  -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
-    opacity: 0;
+    /*opacity: 0;*/
 	}
 	.small_room{
 		background-image: url('../img/header-bg.jpg');
@@ -123,6 +131,13 @@
 	}
 	.full_opacity{
 		opacity: 1;
+	}
+	.detail{
+		padding: 0 0 40px;
+		@include lato-regular-font;
+	}
+	.btn-in-room-type{
+		@include lato-bold-font;
 	}
 }
 @media(max-width:768px) {

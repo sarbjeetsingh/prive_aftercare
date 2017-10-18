@@ -53,3 +53,11 @@ ul.social-buttons {
 .footer-bottom h3{
   padding-top: 10px;
 }
+.footer-logo{
+  @include raleway-bold-font;
+}
+.footer-bottom-list{
+  a{
+    @include montserrat-bold-font;
+  }
+}

@@ -70,6 +70,9 @@ section#contact {
   .text-danger {
     color: $theme-danger;
   }
+  .contact_heading{
+    @include lato-bold-font;
+  }
 }
 .live-chat-block {
   padding: 15px 0;
@@ -82,25 +85,31 @@ section#contact {
   -webkit-font-smoothing: antialiased;
   position: relative;
   top: 5px;
+  @include sourceSansPro-Regular-font;
 }
 section#live_chat{
   padding: 0;
+}
+.live_chat_btn{
+  @include sourceSansPro-Regular-font;
 }
 label.address{
   font-size: 14px;
   color:$gray-lighter;
   margin-bottom: 0px;
+  @include lato-bold-font;
 }
 label.address+p{
   font-size: 16px;
   color: $theme-primary;
   line-height: 1;
+  @include sourceSansPro-Bold-font
 }
 .map{
   height: 348px;
 }
 .contact-form-row{
-  padding-top: 70px;
+  padding-top: 125px;
 }
 .left_box{
   left: -50%;
@@ -111,11 +120,22 @@ label.address+p{
   @include animateSlow;
 }
 #gmap_canvas{
-  height: 338px;
+  height: 420px;
   width: 100%;
+}
+.no_resize{
+  resize: none;
+}
+.gm-style .gm-style-iw{
+  font-size: 18px;
 }
 @media(max-width: 500px){
   .left_box{
     margin-bottom: 20px;
+  }
+}
+@media(max-width: 768px){
+  .top_margin{
+    margin-top: 20px;
   }
 }

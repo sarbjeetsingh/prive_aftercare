@@ -64,7 +64,7 @@
         </div>
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Prive Aftercare</a>
+                <a class="navbar-brand js-scroll-trigger text-uppercase" href="#page-top">Prive Aftercare</a>
             </li>
 
           </ul>
@@ -72,10 +72,10 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead animated zoomIn ">
       <div class="container">
         <div class="intro-text">
-          <a class="btn btn-in-header js-scroll-trigger" href="#services">Watch Video</a>
+          <a class="btn btn-in-header watch_video_btn js-scroll-trigger" href="" data-toggle="modal" id="videoPlayerBtn">Watch Video</a>
           <div class="hr-divider"></div>
           <div class="intro-heading">Healing Reimagined</div>
           <div class="intro-lead-in">Luxury aftercare for those who want to heal in comfort.</div>
@@ -92,7 +92,7 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <span class="live-chat-ques">Have questions? Lets talk!</span>
-              <button id="sendMessageButton" class="btn btn-white ml-20" type="submit">Live Chat</button>
+              <button id="sendMessageButton" class="btn btn-white ml-20 live_chat_btn" type="submit">Live Chat</button>
             </div>
           </div>
         </div>
@@ -102,15 +102,17 @@
     <!-- About -->
     <section id="about">
       <div class="about_box">
-        <div class="about_wrap animated">
-          <h4>ABOUT</h4>
-          <div class="desc">Privé Luxury Recovery/Retreat provides serene rest and recovery to clients within the Hollywood and Los Angeles Area.</div>
+        <div class="about_container">
+          <div class="about_wrap animated">
+            <h4>ABOUT</h4>
+            <div class="desc">Privé Luxury Recovery/Retreat provides serene rest and recovery to clients within the Hollywood and Los Angeles Area.</div>
+          </div>
+          <div class="mission_wrap animated">
+            <h4>OUR MISSION</h4>
+            <div class="desc">We are here to provide a worry free spa like medical retreat for our clients to recover and rejuvenate in a five star hotel environment.</div>
+          </div>
+          <div class="clear"></div>
         </div>
-        <div class="mission_wrap animated">
-          <h4>OUR MISSION</h4>
-          <div class="desc">We are here to provide a worry free spa like medical retreat for our clients to recover and rejuvenate in a five star hotel environment.</div>
-        </div>
-        <div class="clear"></div>
       </div>
     </section>
 
@@ -123,18 +125,18 @@
               <h2 class="section-heading">SERVICES</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row pd-row">
             <div class="col-md-3 col-sm-6 portfolio-item animated">
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>Compounding</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>24 hour nurse service</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service_01.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Threads</h4>
@@ -146,12 +148,12 @@
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>Personal Concierge Service</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>Personal pharmacist</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-2.png" alt="">
+                <img class="img-fluid" src="img/services/service_02.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Explore</h4>
@@ -163,12 +165,12 @@
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>24hr Nurse</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>Personal concierge service</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service_03.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Finish</h4>
@@ -180,12 +182,12 @@
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>24hr Nurse</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>Room Service from Goldie's restaurant</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-2.png" alt="">
+                <img class="img-fluid" src="img/services/service_04.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Lines</h4>
@@ -197,12 +199,12 @@
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>Personal Pharmacist</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>Chauffeur pick up and drop off</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-1.png" alt="">
+                <img class="img-fluid" src="img/services/service_05.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Southwest</h4>
@@ -214,12 +216,12 @@
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <div class="outer">
-                      <h4>Room Service from Goldie's restaurant</h4>
-                      <div class="inner">Type something long that will go here and will take this much room.</div>
+                      <h4>On call beauty services</h4>
+                      <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                     </div>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/services/service-2.png" alt="">
+                <img class="img-fluid" src="img/services/service_06.png" alt="">
               </a>
               <!-- <div class="portfolio-caption">
                 <h4>Window</h4>
@@ -231,12 +233,12 @@
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                       <div class="outer">
-                        <h4>24hr Nurse</h4>
-                        <div class="inner">Type something long that will go here and will take this much room.</div>
+                        <h4>On cal massage therapy service</h4>
+                        <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                       </div>
                     </div>
                   </div>
-                  <img class="img-fluid" src="img/services/service-1.png" alt="">
+                  <img class="img-fluid" src="img/services/service_07.png" alt="">
                 </a>
                 <!-- <div class="portfolio-caption">
                   <h4>Lines</h4>
@@ -248,17 +250,13 @@
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
                       <div class="outer">
-                        <h4>Billing Handled</h4>
-                        <div class="inner">Type something long that will go here and will take this much room.</div>
+                        <h4>Personal Nutritional Guidance</h4>
+                        <!-- <div class="inner">Type something long that will go here and will take this much room.</div> -->
                       </div>
                     </div>
                   </div>
-                  <img class="img-fluid" src="img/services/service-2.png" alt="">
+                  <img class="img-fluid" src="img/services/service_08.png" alt="">
                 </a>
-                <!-- <div class="portfolio-caption">
-                  <h4>Southwest</h4>
-                  <p class="text-muted">Website Design</p>
-                </div> -->
               </div>
           </div>
         </div>
@@ -278,7 +276,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active large_room animated">
                 <!-- <img src="img/room_type/room-type-01.jpg" alt="large room"> -->
-                <div class="inner_box animated zoomIn">
+                <div class="inner_box animated slideInLeft">
                   <h4 class="text-capitalize">Large Room</h4>
                   <div class="price">$1,500</div>
                   <div class="duration">per night</div>
@@ -311,9 +309,10 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="detail text-center animated hide" id="l_detail">King sized bed, in a huge room that accommodates one companion with large sitting and lounge space. Large cable flat screen and a gorgeous view overlooking Hollywood and Los Angeles Hills. Only minutes walk to shopping malls, Beverly Center, Beverly Connection, and a hop away from the Grove. Beautiful clean open bathrooms with a large double door shower, bright and airy space.</div>
                   <div class="">
-                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="#services">Learn More</a>
-                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="#services">Request Booking</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="" id="l_show_more">Learn More</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="" id="request_booking_btn">Request Booking</a>
                     <div class="clear"></div>
                   </div>
                 </div>
@@ -321,7 +320,7 @@
 
               <div class="carousel-item small_room">
                 <!-- <img src="img/header-bg.jpg" alt="small room"> -->
-                <div class="inner_box animated zoomIn">
+                <div class="inner_box animated slideInRight">
                   <h4 class="text-capitalize">Small Room</h4>
                   <div class="price">$750</div>
                   <div class="duration">per night</div>
@@ -348,9 +347,12 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="detail text-center animated hide" id="s_detail">
+                  King sized bed, in a large room that accommodates one companion with sitting and lounge space. Large cable flat screen and a gorgeous view overlooking Hollywood and Los Angeles Hills. Only minutes walk to shopping malls, Beverly Center, Beverly Connection, and a hop away from the Grove. Beautiful clean open bathrooms with a large double door shower, bright and airy space.
+                  </div>
                   <div class="">
-                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="#services">Learn More</a>
-                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="#services">Request Booking</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger lfloat" href="" id="s_show_more">Learn More</a>
+                    <a class="btn btn-in-room-type js-scroll-trigger rfloat" href="" id="request_booking_btn">Request Booking</a>
                     <div class="clear"></div>
                   </div>
                 </div>
@@ -371,28 +373,29 @@
           <img src="img/testimonials/message-02.png" alt="">
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="heading text-uppercase">What people say...</div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="testimonial-content-box">
-                <div class="heading text-uppercase">What people say...</div>
-                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
+                <!-- <div class="heading text-uppercase">What people say...</div> -->
+                <div class="comments">"Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!"</div>
                 <div class="guest_name text-uppercase">LILLY L.</div>
                 <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="testimonial-content-box">
-                <div class="heading text-uppercase">What people say...</div>
-                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
-                <div class="guest_name text-uppercase">LILLY L.</div>
+                <!-- <div class="heading text-uppercase">What people say...</div> -->
+                <div class="comments">"I was picked up from my plastics surgery procedures by a chauffeur and a nurse., this was the beginning of an awesome stay. The nurses are the best, and the cafeteria staff was great as well. I must let you know the names of these kind, passionate, and professional individuals: Linda,Seyma,Edith,Deborah, kim, and Marquis. They made my stay exceptional! If you decide to use this facility as your aftercare choice you will not be disappointed. I stayed at another post op center about 7 months ago for another procedure I had and my original nurse was so rude that it left me taken aback for the remainder of my stay."</div>
+                <div class="guest_name text-uppercase">Nicole L.</div>
                 <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="testimonial-content-box">
-                <div class="heading text-uppercase">What people say...</div>
-                <div class="comments">“Last December I had a total hip replacement and I stayed with Prive for over 2 weeks. I am very, very grateful to Cara, Natalia, Deborah, Kimmy and Mary who took excellent care of me. Kevin from the W made my Christmas and New Year very special during my healing period, Thank You All Very, Very Much!!!”</div>
-                <div class="guest_name text-uppercase">LILLY L.</div>
+                <!-- <div class="heading text-uppercase">What people say...</div> -->
+                <div class="comments">"I am an RN who works at a surgery center. We regularly have our patients transported to Prive for an extra night of care. They are picked up by an RN with a chauffeured town car. They have very luxurious private facilities and all the nurses are ICU trained. Our center feels very comfortable knowing that our patients are very well looked after by nurses who are so knowledgeable.  They also offer all the other services like concierge medicine, home care, security etc. Thank you Prive for making my patients so comfortable."</div>
+                <div class="guest_name text-uppercase">Sara S.</div>
                 <div class="website_name"><img src="img/testimonials/yelp.png" alt=""></div>
               </div>
             </div>
@@ -413,7 +416,7 @@
     <section id="gallery">
       <div class="images_wrap">
         <div class="slider">
-          <div id="slider" class="flexslider">
+          <div id="slider" class="flexslider top-section">
             <ul class="slides">
               <li>
                 <img src="img/images/photo-02.jpg" />
@@ -579,7 +582,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
       <div class="container">
         <div class="row contact-form-row">
           <div class="col-md-6 left_box">
-            <h2 class="section-heading">Get in touch</h2>
+            <h2 class="section-heading contact_heading">Get in touch</h2>
             <label class="address">Phone</label>
             <p>310-555-1234</p>
             <label class="address">Address</label>
@@ -588,7 +591,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
             <p>contact@privecare.com</p>
             <button class="btn btn-default">Chat</button>
           </div>
-          <div class="col-md-6 right_box">
+          <div class="col-md-6 right_box top_margin">
               <form id="contactForm" name="sentMessage" novalidate>
                 <div class="row">
                   <div class="col-md-6">
@@ -613,9 +616,17 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
                   </div>
                   </div>
                   <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input class="form-control" id="subject" type="text" placeholder="Subject" required data-validation-required-message="Please enter subject.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" id="message" placeholder="Your Message" required data-validation-required-message="Please enter a message."></textarea>
+                      <textarea class="form-control no_resize" id="message" placeholder="Your Message" required data-validation-required-message="Please enter a message."></textarea>
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
@@ -694,7 +705,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
         </div>
         <div class="row footer-bottom">
             <div class="col-md-3">
-              <h3>PRIVE AFTERCARE</h3>
+              <h3 class="footer-logo">PRIVE AFTERCARE</h3>
             </div>
             <div class="col-md-3">
               <ul class="list-group footer-bottom-list">
@@ -922,6 +933,24 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
       </div>
     </div>
 
+    <!-- Modal HTML -->
+    <div id="videoModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="close_btn" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- <iframe id="cartoonVideo" width="560" height="315" src="video/Prive-Luxury-Recovery.mov" frameborder="0" allowfullscreen></iframe> -->
+                    <video controls="controls" id="video_player">
+                      <source src="" type="video/mp4">
+                        Your browser does not support the HTML5 Video element.
+                      </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
@@ -939,7 +968,19 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:Eik4NDM4IFcgM3JkIFN0L
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
-
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/59e5fadc4854b82732ff611b/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
   </body>
 

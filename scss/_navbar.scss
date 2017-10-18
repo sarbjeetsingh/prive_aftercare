@@ -13,7 +13,9 @@
   }
   .navbar-brand {
     color: white;
-    @include script-font;
+    @include josefinsans-bold-font;
+    @include antialiased;
+    font-size: 35px;
     &.active,
     &:active,
     &:focus,
