@@ -74,7 +74,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead animated zoomInSmall ">
+    <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <a class="btn btn-in-header watch_video_btn js-scroll-trigger" href="" data-toggle="modal" id="videoPlayerBtn">Watch Video</a>
@@ -240,7 +240,7 @@
                       </div>
                     </div>
                   </div>
-                  <img class="img-fluid" src="img/services/service_07.png" alt="">
+                  <img class="img-fluid" src="img/services/service_07.jpg" alt="">
                 </a>
                 <!-- <div class="portfolio-caption">
                   <h4>Lines</h4>
@@ -276,9 +276,9 @@
             </ol>
 
             <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active large_room">
+              <div class="carousel-item active large_room animated fadeInSmall">
                 <!-- <img src="img/room_type/room-type-01.jpg" alt="large room"> -->
-                <div class="inner_box ">
+                <div class="inner_box animated slideInUpSmall">
                   <h4 class="text-capitalize">Large Room</h4>
                   <div class="price">$1,500</div>
                   <div class="duration">per night</div>
@@ -320,9 +320,9 @@
                 </div>
               </div>
 
-              <div class="carousel-item small_room">
+              <div class="carousel-item small_room animated fadeInSmall">
                 <!-- <img src="img/header-bg.jpg" alt="small room"> -->
-                <div class="inner_box animated">
+                <div class="inner_box animated slideInUpSmall">
                   <h4 class="text-capitalize">Small Room</h4>
                   <div class="price">$750</div>
                   <div class="duration">per night</div>
@@ -835,6 +835,11 @@
     <script>
       $(window).on("load", function (e) {
         $('.preloader').fadeOut();
+        setTimeout(function(){
+          // $('.masthead').addClass('zoomIt');
+          $('.intro-text').addClass('showIn');
+        },1000)
+        
       })
       
     

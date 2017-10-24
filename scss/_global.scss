@@ -1,7 +1,11 @@
 // Global styling for this template
+html{
+  height: 100%;
+}
 body {
   overflow-x: hidden;
   @include body-font;
+  height: 100%;
 }
 
 p {
@@ -42,6 +46,7 @@ h6 {
     position: absolute;
     top: 50%;
     margin-top: -32px;
+    margin-left: -32px;
   }
   
 }

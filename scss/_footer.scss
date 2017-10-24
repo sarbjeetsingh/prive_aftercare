@@ -52,6 +52,7 @@ ul.social-buttons {
 // }
 .footer-bottom h3{
   padding-top: 10px;
+  color: white;
 }
 .footer-logo{
   @include raleway-bold-font;
@@ -63,7 +64,7 @@ ul.social-buttons {
 }
 @media(max-width:767px){
   .footer-logo{
-    text-align: left;
+    text-align: center;
     padding: .75rem 1.25rem
   }
 }
