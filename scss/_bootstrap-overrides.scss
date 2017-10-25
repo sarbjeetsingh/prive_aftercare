@@ -94,10 +94,12 @@
   border:2px solid  white;
 }
 .lfloat{
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 .rfloat{
-  float:right;
+  display: inline-block;
+  vertical-align: middle;
 }
 .ml-20{
   margin-left: 20px;

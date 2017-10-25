@@ -2,12 +2,9 @@
 header.masthead {
   text-align: center;
   color:$theme-primary;
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   position:relative;
-  background-size:cover; 
+  overflow: hidden;
+  
   // transition: all 1s ease-in-out;
   // -webkit-animation-duration: 0.5s!important;
   // animation-duration: 0.5s!important;
@@ -33,8 +30,23 @@ header.masthead {
     }
   }
 }
+header.masthead:before{
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size:cover; 
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
 #videoModal .modal-dialog{
-  max-width: auto !important;
+  // max-width: auto !important;
   width: auto !important;
   margin: 0 !important;
 }
@@ -43,7 +55,8 @@ header.masthead {
 }
 #videoModal video{
   width: 100%;
-  height: 100%;
+  margin-top: -100px;
+  
 }
 #videoModal .modal-content{
   width: 100vw;
@@ -54,6 +67,9 @@ header.masthead {
   padding: 8px;
   border-bottom: none;
   display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 #videoModal button{
   background: #fff;
@@ -73,11 +89,19 @@ header.masthead {
       width: 100%;
       text-align: center;
       left:0;
-      -webkit-transform: translateY(-45%);
-      -ms-transform: translateY(-45%);
-      transform: translateY(-45%);
-      opacity: 0;
-      transition: all 0.5s ease-in-out;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+     
+      .headings-wrapper{
+        transition: all 0.5s ease-in-out;
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      .headings-wrapper.showIn{
+        transform: translateY(0px);
+        opacity: 1;
+      }
       .intro-lead-in {
         font-size: 25px;
         line-height: 40px;
@@ -94,13 +118,11 @@ header.masthead {
     }
     .intro-text.showIn{
       opacity: 1;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+       
     }
   }
-  .masthead.zoomIt{
-    animation: bgzoomer 1s linear forwards;
+  .masthead.zoomIt:before{
+     transform: scale(1.05);
   }
    
 }
@@ -113,6 +135,7 @@ header.masthead {
     padding: 70px 0 40px;
     .intro-text{
       padding-top: 30px;
+      position: relative;
     }
   }
 }
