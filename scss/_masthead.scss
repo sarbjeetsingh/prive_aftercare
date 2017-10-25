@@ -42,8 +42,11 @@ header.masthead:before{
   top: 0;
   height: 100%;
   width: 100%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  transition-property: transform;
+  transition-duration: 0s,0s;
+  transition-timing-function: linear,cubic-bezier(.075,.82,.165,1);
+//   -webkit-transition: all 1s ease-in-out;
+//   transition: all 1s ease-in-out;
 }
 #videoModal .modal-dialog{
   // max-width: auto !important;
@@ -122,6 +125,10 @@ header.masthead:before{
     }
   }
   .masthead.zoomIt:before{
+     transition-property: transform;
+     transition-duration: 10s,.4s;
+     transition-timing-function: linear,cubic-bezier(.075,.82,.165,1);
+     -webkit-transform: scale(1.05);
      transform: scale(1.05);
   }
    

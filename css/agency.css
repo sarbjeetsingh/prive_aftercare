@@ -246,8 +246,9 @@ header.masthead:before {
   top: 0;
   height: 100%;
   width: 100%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition-property: transform;
+  transition-duration: 0s,0s;
+  transition-timing-function: linear, cubic-bezier(0.075, 0.82, 0.165, 1); }
 
 #videoModal .modal-dialog {
   width: auto !important;
@@ -315,6 +316,10 @@ header.masthead:before {
     header.masthead .intro-text.showIn {
       opacity: 1; }
   .masthead.zoomIt:before {
+    transition-property: transform;
+    transition-duration: 10s,.4s;
+    transition-timing-function: linear, cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05); } }
 
 @media (max-width: 767px) {
