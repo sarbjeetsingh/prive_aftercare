@@ -195,11 +195,11 @@ $('#sendMessageButton').on('click', function(){
   Tawk_API.toggle();
 });
 
-$('#roomTypeCarousal').on('slide.bs.carousel', function () {
-  $('#l_show_more').text("Learn More");
-  $('#s_show_more').text("Learn More");
-  $('#s_detail, #l_detail').addClass('hide')
-});
+// $('#roomTypeCarousal').on('slide.bs.carousel', function () {
+//   $('#l_show_more').text("Learn More");
+//   $('#s_show_more').text("Learn More");
+   
+// });
 
 // $(document).ready(function(){
 //     /* Get iframe src attribute value i.e. YouTube video url

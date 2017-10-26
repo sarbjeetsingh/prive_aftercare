@@ -221,8 +221,7 @@ header.masthead {
     line-height: 25px;
     margin-bottom: 25px;
     font-family: 'Tienne-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #3C4557;
-    padding-top: 18px; }
+    color: #3C4557; }
   header.masthead .intro-text .intro-heading {
     font-size: 55px;
     font-weight: 700;
@@ -296,8 +295,8 @@ header.masthead:before {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       header.masthead .intro-text .headings-wrapper {
-        transition: all 0.5s ease-in-out;
-        transform: translateY(30px);
+        transition: all 1s ease-in-out;
+        transform: translateY(15px);
         opacity: 0; }
       header.masthead .intro-text .headings-wrapper.showIn {
         transform: translateY(0px);
@@ -317,10 +316,10 @@ header.masthead:before {
       opacity: 1; }
   .masthead.zoomIt:before {
     transition-property: transform;
-    transition-duration: 10s,.4s;
+    transition-duration: 20s,.4s;
     transition-timing-function: linear, cubic-bezier(0.075, 0.82, 0.165, 1);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05); } }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
 
 @media (max-width: 767px) {
   .live-chat-ques {
@@ -331,14 +330,6 @@ header.masthead:before {
     header.masthead .intro-text {
       padding-top: 30px;
       position: relative; } }
-
-@keyframes bgzoomer {
-  0% {
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto; }
-  100% {
-    background-size: 103% auto;
-    -webkit-background-size: 103% auto; } }
 
 .service-heading {
   margin: 15px 0;
@@ -1060,7 +1051,8 @@ section#about {
   }
 }*/
 #room_type {
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
 
 .room_type_box {
   text-align: center;
@@ -1082,7 +1074,8 @@ section#about {
     /*padding: 10px;*/
     /*background-color: rgba(255, 255, 255, 0.70);*/
     /*margin: 0 auto;*/
-    /*padding: 160px 20px;*/ }
+    /*padding: 160px 20px;*/
+    height: 100%; }
   .room_type_box h4 {
     font-size: 34px;
     color: #232A37;
@@ -1181,6 +1174,10 @@ section#about {
     bottom: auto;
     top: 175px;
     margin-bottom: 0; }
+  .room_type_box .carousel {
+    height: 100%; }
+  .room_type_box .carousel-inner {
+    height: 100%; }
   .room_type_box .full_opacity {
     opacity: 1; }
   .room_type_box .detail {
@@ -1211,6 +1208,8 @@ section#about {
   .room_type_box {
     min-height: 800px;
     height: 100%; }
+  #room_type {
+    height: auto; }
   .room_type_box .large_room, .room_type_box .small_room {
     min-height: 800px; } }
 
@@ -1341,7 +1340,7 @@ section#about {
     display: none; }
   .images_wrap .flexslider .slides > li {
     position: relative;
-    max-height: 80vh; }
+    max-height: 85vh; }
   .images_wrap .slider {
     height: 100%; }
 
