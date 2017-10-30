@@ -316,7 +316,7 @@ header.masthead:before {
       opacity: 1; }
   .masthead.zoomIt:before {
     transition-property: transform;
-    transition-duration: 20s,.4s;
+    transition-duration: 40s,.4s;
     transition-timing-function: linear, cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1); } }

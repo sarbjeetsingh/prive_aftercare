@@ -82,7 +82,7 @@ $('#name').focus(function() {
         controlNav: false,
         animationLoop: false,
         slideshow: false,
-        itemWidth: 150,
+        itemWidth: 100,
         itemMargin: 0,
         asNavFor: '#slider'
       });

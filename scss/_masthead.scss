@@ -124,7 +124,7 @@ header.masthead:before{
   }
   .masthead.zoomIt:before{
      transition-property: transform;
-     transition-duration: 20s,.4s;
+     transition-duration: 40s,.4s;
      transition-timing-function: linear,cubic-bezier(.075,.82,.165,1);
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
